@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap');
+
+
+.playwrite {
+    font-family: "Playwrite BE VLG", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+:root {
+    --primary-color: #E6533C;
+}
+
+/* shared styles */
+.display-flex {
+    display: flex;
+}
+
+.btn {
+    padding: 16px 40px;
+    border-radius: 42px;
+    border: none;
+    font-size: 1.15rem;
+    font-weight: 500;
+
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+
+
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    margin-left: 15px;
+}
+
+.primary-text {
+    color: white;
+}
+
+.secondary-text {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+}
+
+.dark-bg {
+    background-color: black;
+}
+
+.heading-h2 {
+    margin: 0px;
+    color: white;
+    font-size: 3rem;
+}
+
+.heading-h3 {
+    margin: 0px;
+    color: white;
+    font-size: 1.75rem;
+
+}
+
+/* header */
+header {
+
+
+    /* Linear Gradient CSS */
+    background: linear-gradient(to bottom, #000000, #434343, #000000);
+
+}
+
+/* nav styles */
+.ham {
+    display: none;
+}
+
+nav,
+.hero,
+.habits,
+.mile,
+.bmi-container,
+.team-card-container,
+.footer {
+    max-width: 1044px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navbar {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gym-name {
+    color: var(--primary-color);
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4px;
+    border-radius: 39px;
+    align-items: center;
+}
+
+.nav-links .bg-color {
+    background-color: var(--primary-color);
+    border-radius: 46px;
+    padding: 8px 20px;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 30px;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* hero-content */
+.hero {
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.hero-content h3 {
+    font-size: 4rem;
+    margin: 0px;
+
+
+}
+
+.hero-content p {
+    margin: 28px 0px;
+}
+
+.hero-img-img {
+
+    width: 100%;
+    position: relative;
+
+}
+
+.hero-btn {
+
+    padding: 15px 20px;
+    position: absolute;
+
+    border: none;
+    border-radius: 12px;
+
+}
+
+.first {
+    background-color: rgba(8, 8, 8, 0.1);
+
+    top: 270px;
+    right: 200px;
+    backdrop-filter: blur(10px);
+
+}
+
+.second {
+    background-color: rgba(48, 48, 48, 0.54);
+    backdrop-filter: blur(10px);
+    top: 550px;
+    right: 500px;
+}
+
+.ball-div {
+    align-items: center;
+}
+
+.box {
+
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    margin-right: 8px;
+}
+
+
+
+.btn-large {
+    font-size: 2.5rem;
+    font-weight: 700;
+
+
+}
+
+.btn-md {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+/* habits */
+
+.habits {
+    padding: 60px 0px 30px 0px;
+}
+
+.habit-content {
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.habit-content p {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.habit-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+}
+
+.habit-img {
+    display: flex;
+    justify-content: center;
+
+}
+
+.habit-img img {
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+}
+
+.habit-card-container h4,
+.habit-card-container p {
+    text-align: center;
+
+}
+
+/* mile */
+.mile {
+    padding: 50px;
+    border-radius: 18px;
+    box-shadow: rgba(0, 0, 0, 1);
+    justify-content: space-between;
+}
+
+.mile-bg {
+    background-color: rgba(34, 34, 34, 1);
+}
+
+.mile-content,
+.mile-img {
+    width: 40%;
+}
+
+
+
+.mile-img img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.join-btn {
+    padding: 16px 60px;
+}
+
+/* bmi */
+.bmi {
+    width: 100%;
+}
+
+.bmi-content {
+    width: 50%;
+    margin: 88px auto;
+}
+
+.bmi-container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+
+
+
+}
+
+.bmi-chart,
+.bmi-calculator {
+    width: 50%;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px 0px;
+}
+
+th,
+td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+    text-align: start;
+    font-weight: 500;
+}
+
+td {
+    color: rgba(117, 115, 115, 0.1);
+    font-weight: 200;
+}
+
+th,
+td {
+    color: white;
+    padding: 10px 25px;
+}
+
+/* calculator */
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 30px;
+
+}
+
+.grid-bg {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
+
+    padding: 12px 40px 12px 20px;
+
+    border: none;
+    border-radius: 8px;
+}
+
+input[type="number"].grid-bg {
+    color: white;
+}
+
+.grid-bg:hover {
+    color: black;
+}
+
+.activity {
+    grid-column: span 2;
+}
+
+/* team */
+.team {
+    padding-top: 88px;
+    padding-bottom: 88px;
+
+}
+
+.team-content {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.team-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-radius: 18px;
+    padding: 20px;
+
+}
+
+.team-card {
+    background: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    border: none;
+    border-radius: 18px;
+
+}
+
+.team-card img {
+    border-radius: 18px;
+    height: 100%;
+
+    width: 100%;
+
+
+}
+
+.heading-h4 {
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+
+
+.team-card h4 {
+    margin-top: -60px;
+    margin-left: 20px;
+}
+
+.team-card p {
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+/* footer */
+footer {
+    padding-bottom: 30px;
+}
+
+.footer-name {
+    color: var(--primary-color);
+    font-size: 4.375rem;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.get-started {
+    margin-left: 120px;
+}
+
+
+.footer-p {
+    text-align: center;
+}
+
+
+
+/* media query */
+@media screen and (max-width:576px) {
+    header {
+        padding: 0px 20px;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .nav-links {
+        border: none;
+    }
+
+    .ham {
+        display: block;
+
+    }
+
+    /* shared */
+    .bmi-content,
+    .bmi-chart,
+    .bmi-calculator,
+    .team-card-container,
+    .footer-content,
+    .get-started {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .bmi-chart {
+        margin-bottom: 40px;
+    }
+
+    .bmi-chart,
+    .bmi-calculator,
+    .footer {
+        width: calc(100% - 50px);
+    }
+
+    /* hero */
+    .hero,
+    .mile,
+    .bmi-container {
+        flex-direction: column;
+    }
+
+
+
+    .hero-content {
+        width: calc(100% - 40px);
+    }
+
+    .hero-content .buttons {
+        display: flex;
+        padding: 0px;
+
+
+
+    }
+
+    /* .hero-content p {
+        width: 80%;
+    } */
+
+
+    .first {
+        top: 650px;
+        right: 50px;
+
+    }
+
+    .second {
+        width: 35%;
+        top: 850px;
+        left: 100px;
+    }
+
+    /* habits */
+
+    .habit-card-container,
+    .team-card-container,
+    .footer {
+        grid-template-columns: 1fr;
+
+    }
+
+    .habit-card h4 {
+        margin-top: 22px;
+        margin-bottom: 0px;
+    }
+
+    .habit-card p {
+        width: 50%;
+        margin-top: 2px;
+        margin-bottom: 40px;
+        margin: 2px auto 40px auto;
+    }
+
+    .mile {
+        margin: 30px;
+    }
+
+    .mile-content,
+    .mile-img {
+        width: 100%;
+    }
+
+    .join-btn {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
+
+    /* bmi  */
+    .bmi-content {
+        width: 100%;
+    }
+
+    .bmi-container {
+        width: 100%;
+
+    }
+
+    /* team */
+    .display-none {
+        display: none;
+    }
+
+}
