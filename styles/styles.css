@@ -15,7 +15,7 @@
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 200;
     font-style: normal;
     font-variation-settings:
         "slnt" 0;
@@ -28,6 +28,10 @@
 /* shared styles */
 .display-flex {
     display: flex;
+}
+
+.text-align {
+    text-align: center;
 }
 
 .btn {
@@ -46,6 +50,7 @@
 }
 
 .secondary-btn {
+    color: #fff;
     background-color: transparent;
     border: 2px solid white;
     margin-left: 15px;
@@ -97,6 +102,7 @@ nav,
 .mile,
 .bmi-container,
 .team-card-container,
+.reviews,
 .footer {
     max-width: 1044px;
     margin: 0 auto;
@@ -151,6 +157,8 @@ nav,
 }
 
 .hero-content h3 {
+    line-height: 90%;
+
     font-size: 4rem;
     margin: 0px;
 
@@ -326,16 +334,17 @@ td {
 th {
     text-align: start;
     font-weight: 500;
+    color: white;
 }
 
 td {
-    color: rgba(117, 115, 115, 0.1);
+    color: rgba(255, 255, 255, 0.5);
     font-weight: 200;
 }
 
 th,
 td {
-    color: white;
+
     padding: 10px 25px;
 }
 
@@ -358,12 +367,15 @@ td {
     border-radius: 8px;
 }
 
-input[type="number"].grid-bg {
+/* input[type="number"].grid-bg {
     color: white;
-}
+} */
 
-.grid-bg:hover {
+/* .grid-bg:hover {
     color: black;
+} */
+.dropdown {
+    background-color: #000000;
 }
 
 .activity {
@@ -384,10 +396,12 @@ input[type="number"].grid-bg {
 
 .team-card-container {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     border-radius: 18px;
     padding: 20px;
+
 
 }
 
@@ -402,14 +416,16 @@ input[type="number"].grid-bg {
 .team-card img {
     border-radius: 18px;
     height: 100%;
-
+    /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); */
+    /* filter: brightness(80%); */
     width: 100%;
+
 
 
 }
 
 .heading-h4 {
-    color: #fff;
+    color: #ffffff;
     font-size: 1.25rem;
 }
 
@@ -418,11 +434,68 @@ input[type="number"].grid-bg {
 .team-card h4 {
     margin-top: -60px;
     margin-left: 20px;
+
 }
 
 .team-card p {
     margin-top: -20px;
     margin-left: 20px;
+}
+
+/* reviews */
+.review-content {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.review-content button {
+    font-weight: 700;
+}
+
+.review-main {
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+}
+
+.review-img img {
+    width: 120px;
+    height: 200px;
+    border-radius: 100%;
+
+}
+
+.review-cards {
+    width: 60%;
+    gap: 10px;
+
+
+}
+
+.review-card {
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icons {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.white-icon {
+    border: 1px solid white;
+
+    padding: 5px;
+    background-color: #fff;
+    font-size: 20px;
+    border-radius: 100%;
 }
 
 /* footer */
@@ -483,6 +556,8 @@ footer {
     .bmi-calculator,
     .team-card-container,
     .footer-content,
+
+    .reviews,
     .get-started {
         margin-left: 25px;
         margin-right: 25px;
@@ -501,7 +576,8 @@ footer {
     /* hero */
     .hero,
     .mile,
-    .bmi-container {
+    .bmi-container,
+    .review-cards {
         flex-direction: column;
     }
 
@@ -585,6 +661,17 @@ footer {
     /* team */
     .display-none {
         display: none;
+    }
+
+    /* review */
+    .review-img {
+        display: none;
+    }
+
+    .review-cards {
+
+        width: 100%;
+        justify-content: center;
     }
 
 }
