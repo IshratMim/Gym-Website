@@ -309,7 +309,7 @@ nav,
 
 .bmi-container {
     justify-content: space-between;
-    align-items: center;
+
     padding: 50px 0px;
 
 
@@ -417,7 +417,7 @@ td {
     border-radius: 18px;
     height: 100%;
     /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); */
-    filter: brightness(80%);
+    /* filter: brightness(80%); */
     width: 100%;
 
 
@@ -442,10 +442,7 @@ td {
     margin-left: 20px;
 }
 
-.team-card h4,
-.team-card p {
-    z-index: 1;
-}
+
 
 /* reviews */
 .review-content {
