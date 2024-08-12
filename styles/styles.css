@@ -417,7 +417,7 @@ td {
     border-radius: 18px;
     height: 100%;
     /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); */
-    /* filter: brightness(80%); */
+    filter: brightness(80%);
     width: 100%;
 
 
@@ -440,6 +440,11 @@ td {
 .team-card p {
     margin-top: -20px;
     margin-left: 20px;
+}
+
+.team-card h4,
+.team-card p {
+    z-index: 1;
 }
 
 /* reviews */
@@ -479,7 +484,7 @@ td {
     border: 1px solid white;
     border-radius: 18px;
     padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
 }
 
 .icons {
